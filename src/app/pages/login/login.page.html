@@ -1,0 +1,58 @@
+<ion-header>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">SaludPlus</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+
+  <div style="position: relative; display: inline-block;">
+    <!------------- Ícono del corazón -------------->
+    <i class="fas fa-heart" style="color: red; font-size: 100px;"></i>
+    
+    <!------- Ícono del estetoscopio centrado dentro del corazón -------->
+    <i class="fas fa-stethoscope" style="
+      color: rgb(0, 0, 0);
+      font-size: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    "></i>
+  </div>
+  
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="ion-text-center">Iniciar Sesión</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding ion-text-center">
+  
+    <ion-item>
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input [(ngModel)]="loginUsuario" type="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="loginContrasena" type="password"></ion-input>
+    </ion-item>
+  
+    <ion-button expand="block" (click)="validarcredenciales()">Ingresar</ion-button>  
+
+  <ion-text class="ion-text-center" [routerLink]="['/registrate']">
+    <p>Crear cuenta</p>
+  </ion-text>
+  
+  <ion-text class="ion-text-center" [routerLink]="['/recuperar']">
+    <p>¿Olvidaste tu Contraseña?</p>
+  </ion-text>
+
+  <div>
+    <img src="assets/images/logo.jpg" style="max-width: 100%; height: auto;">
+  </div>
+
+</ion-content>
+
