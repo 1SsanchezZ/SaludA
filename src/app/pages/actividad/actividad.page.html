@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/resumen"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: bold;">Actividad</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-segment value="dia">
+    <ion-segment-button value="dia">
+      <ion-label><strong>D</strong></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="semana">
+      <ion-label><strong>S</strong></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="mes">
+      <ion-label><strong>M</strong></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="6meses">
+      <ion-label><strong>6M</strong></ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="ano">
+      <ion-label><strong>A</strong></ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="circle-red">
+          <ion-icon name="flame" size="large"></ion-icon>
+          <p><strong>406 kcal</strong></p>
+          <p><strong>Hoy</strong></p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="circle-green">
+          <ion-icon name="walk" size="large"></ion-icon>
+          <p><strong>0 min</strong></p>
+          <p><strong>Ejercicio</strong></p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="circle-blue">
+          <ion-icon name="analytics-outline" size="large"></ion-icon>
+          <p><strong>0 h</strong></p>
+          <p><strong>Pararse</strong></p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card>
+    <ion-card-content>
+      <p><strong>Gráfico de actividad (Moverse, Ejercicio, Pararse)</strong></p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="font-weight: bold;">Acerca de actividad</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Los círculos de actividad te brindan una rápida referencia visual de tu actividad diaria. Cada vez que alcanzas uno de tus objetivos diarios, el círculo correspondiente se cierra.</strong></p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

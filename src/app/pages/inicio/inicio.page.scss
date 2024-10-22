@@ -1,0 +1,104 @@
+ion-content {
+  --background: #ffffff;
+  --color: #000000;
+}
+
+ion-header,
+ion-toolbar,
+ion-title {
+  --background: #ffffff;
+  --color: #000000;
+}
+
+h1 {
+  color: #000000;
+}
+
+ion-label {
+  color: #000000;
+}
+
+a {
+  color: #000000;
+}
+
+ion-item {
+  --color: #000000; 
+  --background: #ffffff; 
+}
+
+ion-toolbar {
+  --background: #ff6275;  
+}
+
+.icon-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #e3e4f3; 
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px; 
+}
+
+.icon-button ion-icon {
+  font-size: 40px;
+}
+
+.icon-button .actividad {
+  color: #ff5252; 
+}
+
+.icon-button .agua {
+  color: #00bcd4; 
+}
+
+.icon-button .cafe {
+  color: #795548;
+}
+
+.icon-button .entrenamiento {
+  color: #000;
+}
+
+.icon-button .estado-animo {
+  color: #ffeb3b; 
+}
+
+.icon-button .ciclo-menstrual {
+  color: #4caf50;
+}
+
+.icon-button .pasos {
+  color: #ff9800; 
+}
+
+.icon-button .balanza {
+  color: #000; 
+}
+
+.icon-button .sueño {
+  color: #8bc34a; 
+}
+
+.icon-button .medicamentos {
+  color: #f44336; 
+}
+
+.icon-label {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  margin-top: 10px; 
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

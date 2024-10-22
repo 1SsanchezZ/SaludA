@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-card #card class="ion-text-center" style="background: none; box-shadow: none;">
+      <ion-card-content>
+        <ion-title style="font-size: 25px;">RECUPERAR</ion-title>
+      </ion-card-content>
+    </ion-card>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="ion-text-left">
+    <ion-card-header>
+      <ion-card-title>¿Olvidaste tu contraseña?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>No te preocupes. Para recuperar tu cuenta, sigue estos pasos:</p>
+      <ul>
+        <li>1. Ingresa tu correo electrónico asociado a la cuenta.</li>
+        <li>2. Revisa tu bandeja de entrada para recibir instrucciones.</li>
+        <li>3. Sigue los pasos para restablecer tu contraseña.</li>
+      </ul>
+      <p>Ingresa tu correo electrónico a continuación y presiona "Enviar" para recibir más instrucciones.</p>
+    </ion-card-content>
+
+    <ion-item lines="full">
+      <ion-label position="stacked" style="font-size: 18px;">Correo electrónico</ion-label>
+      <ion-input 
+        type="email" 
+        fill="solid" 
+        placeholder="usuario@correo.com" 
+        [(ngModel)]="loginUsuario" 
+        style="font-size: 18px; padding: 10px;">
+      </ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="primary" (click)="enviarInstrucciones()" style="margin-top: 20px;" [routerLink]="['/login']">
+      Enviar
+    </ion-button> 
+  </ion-card>
+
+  <div>
+    <img _ngcontent-ng-c1038443475="" src="assets/images/logo.jpg" style="max-width: 100%; height: auto;">
+  </div>
+
+</ion-content>
