@@ -30,7 +30,7 @@ export class LoginPage implements OnInit {
     } else {
       const alert = await this.alertController.create({
         header: 'Error',
-        message: 'Correo o contraseña incorrectas. Por favor, inténtalo de nuevo.',
+        message: 'Credencial incorrecta. Por favor, inténtalo de nuevo.',
         buttons: ['OK']
       });
 
