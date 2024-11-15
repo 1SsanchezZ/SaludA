@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Consumo de Agua</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Consumo Diario</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Consumo Hoy</ion-label>
+        <ion-progress-bar value="0.6" color="primary"></ion-progress-bar>
+        <ion-label slot="end">60%</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Meta: 2L</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Consumo Semanal</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Promedio Semanal</ion-label>
+        <ion-progress-bar value="0.75" color="secondary"></ion-progress-bar>
+        <ion-label slot="end">75%</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Estadísticas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Consumo Anual</ion-label>
+        <ion-progress-bar value="0.45" color="tertiary"></ion-progress-bar>
+        <ion-label slot="end">45%</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full" (click)="setReminder()">Establecer Recordatorio</ion-button>
+</ion-content>

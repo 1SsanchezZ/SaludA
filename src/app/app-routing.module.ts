@@ -25,6 +25,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/actividad/actividad.module').then(m => m.ActividadPageModule)
   },
   {
+    path: 'citas', 
+    loadChildren: () => import('./pages/citas/citas.module').then( m => m.CitasPageModule)
+  },
+  {
+    path: 'agua',
+    loadChildren: () => import('./pages/agua/agua.module').then( m => m.AguaPageModule)
+  },
+  {
     path: 'registrate', 
     loadChildren: () => import('./pages/registrate/registrate.module').then( m => m.RegistratePageModule)
   },

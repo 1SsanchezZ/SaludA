@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Agendar Cita Médica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Agendar tu Cita</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Selección de especialidad -->
+      <ion-item>
+        <ion-label>Especialidad</ion-label>
+        <ion-select placeholder="Selecciona" [(ngModel)]="especialidad">
+          <ion-select-option value="medicina-general">Medicina General</ion-select-option>
+          <ion-select-option value="pediatria">Pediatría</ion-select-option>
+          <ion-select-option value="cardiologia">Cardiología</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <!-- Selector de fecha -->
+      <ion-item>
+        <ion-label>Fecha</ion-label>
+        <ion-datetime display-format="DD/MM/YYYY" [(ngModel)]="fecha" [min]="minDate" placeholder="Selecciona una fecha"></ion-datetime>
+      </ion-item>
+
+      <!-- Botón para agendar -->
+      <ion-button expand="full" color="primary" (click)="agendarCita()">Agendar Cita</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
