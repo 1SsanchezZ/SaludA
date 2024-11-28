@@ -1,0 +1,23 @@
+ion-content {
+    --background: #ffffff;
+    --color: #000000;
+  }
+  
+  ion-toolbar {
+    --background: #ff6275;  
+  }
+  
+  .mood-card {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  ion-card-content p {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  ion-footer {
+    --background: #f7f7f7;
+  }
+  

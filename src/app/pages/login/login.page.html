@@ -42,17 +42,23 @@
   
     <ion-button expand="block" (click)="validarcredenciales()">Ingresar</ion-button>  
 
-  <ion-text class="ion-text-center" [routerLink]="['/registrate']">
-    <p>Crear cuenta</p>
-  </ion-text>
+    <ion-text class="ion-text-center" [routerLink]="['/registrate']">
+      <p>Crear cuenta</p>
+    </ion-text>
   
-  <ion-text class="ion-text-center" [routerLink]="['/recuperar']">
-    <p>¿Olvidaste tu Contraseña?</p>
-  </ion-text>
+    <ion-text class="ion-text-center" [routerLink]="['/recuperar']">
+      <p>¿Olvidaste tu Contraseña?</p>
+    </ion-text>
 
-  <div>
-    <img src="assets/images/logo.jpg" style="max-width: 100%; height: auto;">
-  </div>
+    <ion-button expand="block" (click)="goToGeolocalizacion()">
+      Localización
+    </ion-button>     
+
+    <div>
+      <img src="assets/images/logo.jpg" style="max-width: 100%; height: auto;">
+    </div>
+
+  </ion-content>
 
 </ion-content>
 

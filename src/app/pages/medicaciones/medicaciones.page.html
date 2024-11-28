@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Medicaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Medicaciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Medicamentos Actuales</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Ibuprofeno</ion-label>
+          <ion-label slot="end">200mg</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Loratadina</ion-label>
+          <ion-label slot="end">10mg</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Paracetamol</ion-label>
+          <ion-label slot="end">500mg</ion-label>
+        </ion-item>
+        <!-- Aquí puedes agregar más medicamentos -->
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>¿Cómo te sientes?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item (click)="recommendMedication('fiebre')">
+          <ion-label>Fiebre</ion-label>
+        </ion-item>
+        <ion-item (click)="recommendMedication('resfrio')">
+          <ion-label>Resfriado</ion-label>
+        </ion-item>
+        <ion-item (click)="recommendMedication('alergia')">
+          <ion-label>Alergia</ion-label>
+        </ion-item>
+        <ion-item (click)="recommendMedication('dolorCabeza')">
+          <ion-label>Dolor de Cabeza</ion-label>
+        </ion-item>
+        <ion-item (click)="recommendMedication('dolorGarganta')">
+          <ion-label>Dolor de Garganta</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

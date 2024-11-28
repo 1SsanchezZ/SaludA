@@ -37,9 +37,50 @@ const routes: Routes = [
     loadChildren: () => import('./pages/registrate/registrate.module').then( m => m.RegistratePageModule)
   },
   {
+    path: 'cafeina',
+    loadChildren: () => import('./pages/cafeina/cafeina.module').then( m => m.CafeinaPageModule)
+  },
+  {
+    path: 'entrenamientos',
+    loadChildren: () => import('./pages/entrenamientos/entrenamientos.module').then( m => m.EntrenamientosPageModule)
+  },
+  {
+    path: 'estado',
+    loadChildren: () => import('./pages/estado/estado.module').then( m => m.EstadoPageModule)
+  },
+  {
+    path: 'ciclo',
+    loadChildren: () => import('./pages/ciclo/ciclo.module').then( m => m.CicloPageModule)
+  },
+  {
+    path: 'pasos',
+    loadChildren: () => import('./pages/pasos/pasos.module').then( m => m.PasosPageModule)
+  },
+  {
+    path: 'peso',
+    loadChildren: () => import('./pages/peso/peso.module').then( m => m.PesoPageModule)
+  },
+  {
+    path: 'estatura',
+    loadChildren: () => import('./pages/estatura/estatura.module').then( m => m.EstaturaPageModule)
+  },
+  {
+    path: 'sueno',
+    loadChildren: () => import('./pages/sueno/sueno.module').then( m => m.SuenoPageModule)
+  },
+  {
+    path: 'medicaciones',
+    loadChildren: () => import('./pages/medicaciones/medicaciones.module').then( m => m.MedicacionesPageModule)
+  },
+  {
+    path: 'geolocalizacion',
+    loadChildren: () => import('./pages/geolocalizacion/geolocalizacion.module').then( m => m.GeolocalizacionPageModule)
+  },
+  {
     path: '**',
     loadChildren: () => import('./pages/error404/error404.module').then(m => m.Error404PageModule)
   },
+
 ];
 
 @NgModule({

@@ -1,20 +1,65 @@
-ion-header {
-    --background: #ff6275;
-    --color: white;
+ion-content {
+  --background: #ffffff; // Fondo blanco
+  --color: #000000; // Texto en negro
+}
+
+ion-header,
+ion-toolbar,
+ion-title {
+  --background: #ffffff; // Fondo blanco para el encabezado y toolbar
+  --color: #000000; // Texto en negro
+}
+
+ion-toolbar {
+  --background: #ff6275; // Fondo rosa para la barra de herramientas
+}
+
+ion-segment-button ion-label {
+  font-weight: bold !important; // Etiquetas en los botones de segmento en negrita
+}
+
+ion-back-button {
+  --color: #000000; // Color negro para el botón de regreso
+}
+
+ion-button {
+  margin: 16px;
+  --background: #ff6275; // Fondo del botón a juego con la barra de herramientas
+  --color: #ffffff; // Texto blanco para los botones
+  --background-hover: #ff5065; // Efecto hover en el botón
+  --background-activated: #ff4055; // Efecto activado en el botón
+  border-radius: 8px;
+}
+
+ion-card {
+  margin: 16px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  ion-card-title {
+    font-size: 1.2rem;
+    color: #ff6275; // Color del título a juego con la barra de herramientas
+    font-weight: bold;
   }
-  
-  ion-toolbar {
-    --background: #ff6275;
+
+  ion-progress-bar {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 16px;
+    --buffer-background: rgba(255, 255, 255, 0.2); // Fondo de la barra de progreso
   }
-  
-  ion-button {
-    margin-top: 20px;
-    background: #4caf50;
-    border-radius: 25px;
-  }
-  
+
   ion-item {
-    --border-color: #ccc;
-    margin-bottom: 15px;
+    ion-label {
+      font-weight: bold;
+      color: #666666; 
+    }
+
+    &:last-child {
+      ion-label {
+        font-size: 0.9rem;
+        color: #666666; // Color gris para las etiquetas de información secundaria
+      }
+    }
   }
-  
+}

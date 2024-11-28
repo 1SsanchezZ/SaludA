@@ -38,6 +38,10 @@ export class LoginPage implements OnInit {
     }
   }
   
+  goToGeolocalizacion() {
+    this.router.navigate(['/geolocalizacion']);
+  }
+  
   irARegistrate() {
     this.router.navigate(['/registrate']);
   }

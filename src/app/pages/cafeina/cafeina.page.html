@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/resumen"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="font-weight: bold;">Cafeína</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" style="font-weight: bold;">Cafeína</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Consumo Diario de Cafeína</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Ingesta de Hoy</ion-label>
+        <ion-progress-bar value="{{ dailyCaffeine / caffeineLimit }}" color="primary"></ion-progress-bar>
+        <ion-label slot="end">{{ (dailyCaffeine / caffeineLimit) * 100 | number:'1.0-0' }}%</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Meta: {{ caffeineLimit }}mg</ion-label>
+      </ion-item>
+      <ion-item *ngIf="dailyCaffeine > caffeineLimit">
+        <ion-label color="danger">Has superado el límite recomendado</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Efectos en tu rendimiento</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p *ngIf="dailyCaffeine <= 400">
+        Tu consumo de cafeína está dentro de los límites recomendados. Puedes notar una mejora en el enfoque y la alerta.
+      </p>
+      <p *ngIf="dailyCaffeine > 400">
+        Has consumido más de lo recomendado. Esto puede afectar negativamente tu sueño, aumentar la ansiedad o disminuir el rendimiento físico.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full" (click)="setCaffeineReminder()">Recordatorio para Limitar Cafeína</ion-button>
+</ion-content>

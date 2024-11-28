@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>sueno</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">sueno</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registro de Sueño</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Horas Dormidas</ion-label>
+        <ion-label slot="end">{{ sleepHours }} hrs</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hora de Acostarse</ion-label>
+        <ion-label slot="end">{{ sleepTime }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hora de Despertarse</ion-label>
+        <ion-label slot="end">{{ wakeUpTime }}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Siestas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Duración de la Siesta</ion-label>
+        <ion-label slot="end">{{ napDuration }} mins</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Hora de la Siesta</ion-label>
+        <ion-label slot="end">{{ napTime }}</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full" (click)="trackSleep()">Registrar Sueño</ion-button>
+</ion-content>
